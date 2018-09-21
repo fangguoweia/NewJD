@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#F23030</color>
+    <color name="cheng">#FB1700</color>
+    <color name="white">#FFF9F9</color>
+    <color name="black">#2E2D2D</color>
+    <color name="hui">#e0000000</color>
+    <color name="huo">#D4D4D4</color>
+    <color name="scan_corner_color">#0effc2</color>
+</resources>

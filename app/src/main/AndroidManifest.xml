@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bw.movie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/jd_buy_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".mvp.view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvp.view.activity.WelcomeActivity" />
+        <activity android:name=".mvp.view.activity.ProductsActivity" />
+        <activity android:name=".mvp.view.activity.DetailActivity" />
+        <activity android:name=".mvp.view.activity.LoginActivity" />
+        <activity android:name=".mvp.view.activity.RegisterActivity" />
+        <activity android:name=".mvp.view.activity.UserSetActivity" />
+        <activity android:name=".mvp.view.activity.NcSetActivity" />
+        <activity android:name=".mvp.view.activity.QueryGoodsActivity" />
+        <activity android:name=".mvp.view.activity.QueryActivity" />
+        <activity android:name=".mvp.view.activity.CreateOrderActivity" />
+        <activity android:name=".mvp.view.activity.TestActivity" />
+        <activity android:name=".mvp.view.activity.PayActivity" />
+        <activity android:name=".mvp.view.activity.MyOrderActivity"></activity>
+    </application>
+
+</manifest>

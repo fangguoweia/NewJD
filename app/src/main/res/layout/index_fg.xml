@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bw.movie.diyview.MyScrollView
+        android:id="@+id/index_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/index_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></com.youth.banner.Banner>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/index_jgg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/kaui" />
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@anim/anim_in"
+                    android:outAnimation="@anim/anim_out">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="hot vivo X20 带你开启全面屏时代！逆光也清晰，照亮你的美！"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="推荐 【现货新品抢购】全面屏2.0震撼来袭，骁龙835处理器，四曲面陶瓷机"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="热门 Super AMOLED三星双曲面2K 屏，支持无线充电！"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="最新 升级4G大显存！Nvme协议Pcie SSD,速度快人一步】GTX1050Ti就选拯救者！"
+                        android:textSize="12dp" />
+                </ViewFlipper>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/miaos" />
+
+                <TextView
+                    android:text="00点场"
+                    android:id="@+id/index_even"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/index_hour"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/index_minute"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/index_second"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tuijian" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/index_tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </com.bw.movie.diyview.MyScrollView>
+
+    <include layout="@layout/mysearch"></include>
+</RelativeLayout>
